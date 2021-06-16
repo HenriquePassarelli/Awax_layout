@@ -109,15 +109,26 @@ header .menu nav a:hover
 
 
 /* about us */
-#about_us
+main
 {
     text-align: center;
+}
+main h2
+{
+    font-size: 2.5vw;
+}
+main h5
+{
+    font-size: 1.5vw;
+    color: gray;
+}
+#about_us
+{
     margin-top: 3rem;
 }
 #about_us h5
 {
-    color: gray;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .about_content
 {
@@ -140,4 +151,31 @@ header .menu nav a:hover
 {
     width: 80%;
     margin-bottom:2rem ;
+}
+
+/* services */
+#services
+{
+    margin-top: 2rem;
+    background: black;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    padding:2rem;
+}
+#services h2
+{
+    margin-top:1rem;
+}
+.labels
+{
+    margin: 3rem ;
+    display: grid;
+    grid-template-columns: repeat(4,.2fr);  
+    column-gap: 2rem;
+    justify-content: center;  
+}
+.labels h6
+{
+    color: gray;
 }
