@@ -100,7 +100,7 @@ header .menu nav a:hover
 .background img
 {
     width: 100%;
-    height:44.619vw;
+    height:calc(100vh - 5rem);
     object-fit: cover;
 }
 /* background content */
@@ -783,12 +783,6 @@ footer .email input::placeholder
     .background h1
     {
         font-size:10vw;
-    }
-
-/* header backgroung  */
-    .background img
-    {
-        height: 150vw;
     }
 
 /* main */
