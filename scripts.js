@@ -1,22 +1,27 @@
 
-
-let choice = document.getElementById('button01')
-
-
-
-
-let top_button = document.getElementById('top-button')
-let topnav = document.getElementById('topnav');
-/* window.onresize = function () {
-    let x = window.innerWidth;
-    if (x > 700) {
-        topnav.style.display = "block";
-    }
-    else {
+function Navfunction(x) {
+    x.classList.toggle("change");
+    let topnav = document.getElementById('nav');
+    if (topnav.style.display != "flex") {
+        topnav.style.display = "flex";
+    } else {
         topnav.style.display = "none";
     }
+}
 
-} */
+let top_button = document.getElementById('top-button')
+let navbutton = document.getElementById('topnav');
+window.onresize = function () {
+    let x = window.innerWidth;
+    if (x <= 500) {
+        navbutton.style.display = "inline-block";
+    }
+    else {
+        navbutton.style.display = "none";
+    }
+    
+
+}
 
 let onScroll = function () {
     var y = window.scrollY;
@@ -27,7 +32,5 @@ let onScroll = function () {
         top_button.style.display = "none";
     }
 }
-
-
 
 window.addEventListener("scroll", onScroll);
