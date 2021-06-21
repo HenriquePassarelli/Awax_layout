@@ -9,3 +9,5 @@
 ![Screenshot from 2021-06-21 12-40-17](https://user-images.githubusercontent.com/71354731/122790122-62d13980-d28e-11eb-9a9c-7af3a69fca31.png)
 ![Screenshot from 2021-06-21 12-40-35](https://user-images.githubusercontent.com/71354731/122790124-62d13980-d28e-11eb-8078-1107453c7b6c.png)
 ![Screenshot from 2021-06-21 12-40-55](https://user-images.githubusercontent.com/71354731/122790125-6369d000-d28e-11eb-9852-a98e700cbf2f.png)
+![Screenshot from 2021-06-21 12-41-04](https://user-images.githubusercontent.com/71354731/122790127-6369d000-d28e-11eb-8908-67093d3a74f4.png)
+![Screenshot from 2021-06-21 12-41-21](https://user-images.githubusercontent.com/71354731/122790128-64026680-d28e-11eb-8aba-f85b75c93f0d.png)
