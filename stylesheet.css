@@ -71,6 +71,7 @@ header .menu
 header .menu nav
 {
     margin-left:5rem;
+    display:flex;
 }
 header .menu nav a
 {
@@ -78,10 +79,15 @@ header .menu nav a
     color: whitesmoke;
     margin-left: 1rem;
     height: 5rem;
+    display:flex;
+    align-items: center;
+    border-bottom: 2px solid black;
 }
-header .menu nav a:hover
+header .menu nav a:hover,
+header .menu nav .active
 {
     opacity: 0.8;
+    border-bottom: 2px solid var(--theme-color);
 
 }
 
@@ -146,9 +152,13 @@ header .menu nav a:hover
     margin-top: 5rem;
     margin-right: 1rem;
 }
+.slide_button #button01
+{
+    background: var(--theme-color);
+}
 .slide_button .radio:last-child
 {
-    margin-right: -.5rem;
+    margin-right: -.05rem;
 }
 
 /* main*/
@@ -228,6 +238,7 @@ main h6
     column-gap: 2rem;
     justify-content: center;  
 }
+
 .labels h6
 {
     color: gray;
@@ -254,19 +265,23 @@ main h6
     color: rgb(87, 87, 87);
 
 }
-.filter a:hover
+.filter a:hover,
+.filter .active
 {
     cursor: pointer;
     opacity: .8;
+    border-bottom: 2px solid var(--theme-color);
 }
 
 /* images */
+
 .filter_result img
 {
     width:17rem;
     height:11rem;
     object-fit: cover;
     border-radius: .3rem;
+    cursor: pointer;
 }
 .filter_result
 {
@@ -274,6 +289,38 @@ main h6
     display:grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
+}
+
+.filter_result .photo_info
+{
+    width: 17rem;
+    height:11rem;
+    color:white;
+    display:none;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    position: absolute;
+    background-color:black;
+    border-radius: .3rem;
+    opacity:.6;
+    cursor: pointer;
+}
+.photo_info {
+    animation: fadeIn ease 1s;
+   
+}
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:.6;
+    }
+}
+.filter_result .photo:hover .photo_info
+{
+    display:flex;
 }
 .button
 {
